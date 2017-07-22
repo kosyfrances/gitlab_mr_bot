@@ -1,0 +1,13 @@
+```
+{% if error %}
+{{ error }}
+{% else %}
+{% for mr in mrs -%}
+    {{ mr['title'] }} by {{ mr['user'] }}
+    {{ mr['url'] }}
+    {% if mr['assignee'] -%}
+    assigned to {{ mr['assignee'] }}
+    {% endif %}
+{% endfor %}
+{% endif %}
+```
