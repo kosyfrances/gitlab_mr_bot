@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/kosyfrances/gitlab_mr_bot/badge.svg?branch=master)](https://coveralls.io/github/kosyfrances/gitlab_mr_bot?branch=master) [![Build Status](https://travis-ci.org/kosyfrances/gitlab_mr_bot.svg?branch=master)](https://travis-ci.org/kosyfrances/gitlab_mr_bot)
+
 # Gitlab MR Bot
 Gitlab MR bot is a slackbot for Gitlab merge requests. All it does is to send you assigned and unassigned merge requests for a project on Gitlab. This was just a random weekend play project :) and it is completely opensource.
 
