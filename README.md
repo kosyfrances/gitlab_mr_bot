@@ -1,5 +1,5 @@
 # Gitlab MR Bot
-Gitlab MR bot is a slackbot for Gitlab merge requests. All it does is to send you assigned and unassigned merge requests for a project on Gitlab. This was just a random weekend play project :)
+Gitlab MR bot is a slackbot for Gitlab merge requests. All it does is to send you assigned and unassigned merge requests for a project on Gitlab. This was just a random weekend play project :) and it is completely opensource.
 
 ### Tech
 
@@ -14,7 +14,7 @@ Clone the repository from [GitHub](https://www.github.com)
 $ git clone https://github.com/kosyfrances/gitlab_mr_bot.git
 ```
 
-Gitlab MR bot gets its data from [Gitlab API](https://docs.gitlab.com/ee/api/).
+Gitlab MR bot gets its data from [Gitlab API v4](https://docs.gitlab.com/ee/api/).
 
 ### Installation
 
