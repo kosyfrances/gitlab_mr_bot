@@ -6,12 +6,12 @@ from common.utils import render
 
 
 @listen_to('mr help', re.IGNORECASE)
-def crq_help(message):
+def channel_help(message):
     response = render('help_response.j2')
     message.reply(response)
 
 
 @respond_to('help', re.IGNORECASE)
-def help(message):
+def dm_help(message):
     response = render('help_response.j2')
     message.reply(response)
