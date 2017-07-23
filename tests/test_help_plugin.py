@@ -41,7 +41,7 @@ class TestHelpFunction(TestCase):
     @patch('slackbot.dispatcher.Message', return_value=help_message)
     def test_dm_help_with_help_message(self, mock_object):
         mock_object.body = self.help_msg
-        help_plugin.help(mock_object)
+        help_plugin.dm_help(mock_object)
 
         self.assertTrue(mock_object.reply.called)
         mock_object.reply.assert_called_with(render('help_response.j2'))
@@ -49,7 +49,7 @@ class TestHelpFunction(TestCase):
     @patch('slackbot.dispatcher.Message', return_value=wrong_message)
     def test_dm_help_with_wrong_message(self, mock_object):
         mock_object.body = self.wrong_msg
-        help_plugin.help(mock_object)
+        help_plugin.dm_help(mock_object)
 
         self.assertTrue(mock_object.reply.called)
         mock_object.reply.assert_called_with(render('help_response.j2'))
@@ -57,7 +57,7 @@ class TestHelpFunction(TestCase):
     @patch('slackbot.dispatcher.Message', return_value=channel_message)
     def test_help_message_for_channel(self, mock_object):
         mock_object.body = self.channel_msg
-        help_plugin.help(mock_object)
+        help_plugin.channel_help(mock_object)
 
         self.assertTrue(mock_object.reply.called)
         mock_object.reply.assert_called_with(render('help_response.j2'))
@@ -65,7 +65,7 @@ class TestHelpFunction(TestCase):
     @patch('slackbot.dispatcher.Message', return_value=wrong_channel_message)
     def test_wrong_help_message_for_channel(self, mock_object):
         mock_object.body = self.wrong_channel_msg
-        help_plugin.help(mock_object)
+        help_plugin.channel_help(mock_object)
 
         self.assertTrue(mock_object.reply.called)
         mock_object.reply.assert_called_with(render('help_response.j2'))
