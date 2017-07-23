@@ -2,7 +2,7 @@ from unittest import TestCase
 from unittest.mock import patch
 
 from plugins import help_plugin
-from faker import fake_creds, FakeClient, FakeMessage
+from .faker import fake_creds, FakeClient, FakeMessage
 from common.utils import render
 
 
