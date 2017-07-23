@@ -7,5 +7,5 @@ def main():
 
 
 if __name__ == '__main__':
-    print('CRQ bot is now running')
+    print('Gitlab MR bot is now running')
     main()
